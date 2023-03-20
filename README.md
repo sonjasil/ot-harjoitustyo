@@ -8,3 +8,4 @@
 [komentorivi.txt](https://github.com/sonjasil/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 Muutos
+Toinen muutos
