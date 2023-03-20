@@ -1,3 +1,7 @@
-# Otsikko
+# Ohjelmistotekniikka, harjoitustyö
 
-Tästä alkaa tekstiosuus, jossa osa on *kursivoitua tekstiä* ja osa on **lihavoitua tekstiä**
+##Tehtävät
+
+### Viikko 1
+[gitlog.txt](https://github.com/sonjasil/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+[komentorivi.txt](https://github.com/sonjasil/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
