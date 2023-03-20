@@ -1,0 +1,104 @@
+commit a004475d2b15ea32c114550a08118b7879247399
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:59:08 2023 +0200
+
+    poisto ja uusi nimi
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit eaa1d9bd5f13e4122d4885e3ccd5b8df99162d47
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:54:22 2023 +0200
+
+    tiedostojen luonti
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit ea69f63b7062cae6358c079a9d7f84d22cb412b8
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:27:11 2023 +0200
+
+    kahden tiedoston muokkaus
+
+ eka.txt    | 3 ++-
+ kolmas.txt | 3 ++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+commit 99e7c4083342ba4beb364961a85a172e81c94892
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:25:04 2023 +0200
+
+    tiedoston nimi muutettu
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d51d20b02508476526cc40daffefc0aa57a775c1
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:23:12 2023 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 7c15616743b3fabdbbbd3b6479ea2ce062dfd77f
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:20:33 2023 +0200
+
+    tiedoston muokkaus
+
+ tiedosto.txt | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+commit 79b25b283006e45edb7390e6218541059fdcffaa
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:18:41 2023 +0200
+
+    tekstin lisäys
+
+ tiedosto.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit d498d9d194a5c91a0b9ba831b45ddd4487c5294d
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:11:13 2023 +0200
+
+    tiedostojen muokkaus
+
+ kolmas.txt | 2 ++
+ toinen.txt | 1 +
+ 2 files changed, 3 insertions(+)
+
+commit 77a36993ba0b2aa5fe953569d2afb338cbe2e1a2
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:08:06 2023 +0200
+
+    kolmas
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d2e50be189472f8c03e41b837300daf8def70478
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:06:17 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit ef035d4a37582c849e98efa2933efd242dae052e
+Author: Sonja Silvonen <sonja.silvonen@outlook.com>
+Date:   Mon Mar 20 18:04:03 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
