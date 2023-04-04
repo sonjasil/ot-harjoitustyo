@@ -1,9 +1,10 @@
 import pygame
-from back import Back
+from app.back import Back
 
 class Grid:
     def __init__(self, map, cell_size):
         self.cell_size = cell_size
+        self.size = len(map)
         self.backs = pygame.sprite.Group()
         self.all_sprites = pygame.sprite.Group()
 
