@@ -1,4 +1,4 @@
-from app.grid import Grid
+from grid import Grid
 import pygame
 
 def create_map(x):

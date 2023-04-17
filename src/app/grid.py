@@ -1,5 +1,5 @@
 import pygame
-from app.back import Back
+from back import Back
 
 class Grid:
     def __init__(self, map, cell_size):
