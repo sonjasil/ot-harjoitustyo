@@ -1,1 +1,1 @@
-Architecture.drawio
+![Architecture](./src/graphics/Architecture.drawio)
