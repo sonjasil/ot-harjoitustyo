@@ -7,3 +7,7 @@ Sovellus on muistipeli, jossa pelaaja voi valita itse vaikeustason kolmesta vaih
 [Työaikakirjanpito](dokumentaatio/tyoaikakirjanpito.md)
 
 [Changelog](dokumentaatio/changelog.md)
+
+## Käynnistysohje
+
+Asenna ensin riippuvuudet komennolla poetry install. Tämän jälkeen sovellus käynnistyy komennolla poetry run invoke start.
