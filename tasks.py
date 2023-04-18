@@ -2,7 +2,7 @@ from invoke import task
 
 @task 
 def start(ctx):
-    ctx.run("python3 src/app/draw_grid.py", pty=True)
+    ctx.run("python3 src/app/interface.py", pty=True)
 
 @task
 def test(ctx):
@@ -16,3 +16,6 @@ def coverage(ctx):
 def coverage_report(ctx):
     ctx.run("coverage html", pty=True)
 
+@task(lint)
+def pylint_check(ctx):
+    ctx.run("pylint src", pty=True)
