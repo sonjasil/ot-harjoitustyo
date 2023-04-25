@@ -12,7 +12,7 @@ Sovellus on muistipeli, jossa pelaaja voi valita itse vaikeustason kolmesta vaih
 
 [Release](https://github.com/sonjasil/ot-harjoitustyo/releases/tag/viikko5)
 
-## Käynnistysohje
+## Käyttöohje
 
 Asenna ensin sovelluksen riippuvuudet komennolla:
 
@@ -32,7 +32,7 @@ Testien suoritus tapahtuu komennolla:
 poetry run invoke test
 ```
 
-Testikattavuusraportti luodaan hakemistoon __htmlcov__ komennolla:
+Testikattavuusraportti luodaan __htmlcov__-hakemistoon komennolla:
 
 ```bash
 poetry run invoke coverage-report
