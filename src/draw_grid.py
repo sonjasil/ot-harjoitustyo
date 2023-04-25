@@ -1,5 +1,5 @@
-import pygame
 from random import shuffle
+import pygame
 from grid import Grid, Layer
 from matching_game import Game
 
