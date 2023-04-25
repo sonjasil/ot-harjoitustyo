@@ -1,4 +1,4 @@
-from tkinter import Tk, ttk, constants, Button
+from tkinter import Tk, ttk, Button
 from draw_grid import main
 
 class Interface:
@@ -7,9 +7,12 @@ class Interface:
 
     def start(self):
         label = ttk.Label(master=self._root, text="Muistipeli", font=("Arial", 25))
-        level1 = Button(master=self._root, text="Taso 1", height=5, width=10, command=self._start_level1)
-        level2 = Button(master=self._root, text="Taso 2", height=5, width=10, command=self._start_level2)
-        level3 = Button(master=self._root, text="Taso 3", height=5, width=10, command=self._start_level_3)
+        command1 = self._start_level1
+        command2 = self._start_level2
+        command3 = self._start_level_3
+        level1 = Button(master=self._root, text="Taso 1", height=5, width=10, command=command1)
+        level2 = Button(master=self._root, text="Taso 2", height=5, width=10, command=command2)
+        level3 = Button(master=self._root, text="Taso 3", height=5, width=10, command=command3)
 
         label.grid(row=0, column=0)
         label.grid_rowconfigure(1, weight=1)
