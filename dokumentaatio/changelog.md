@@ -8,3 +8,9 @@
 - Lisätty alustava käyttöliittymä, josta pääsee siirtymään erikokoisiin tasoihin
 - Lisätty käynnistysohje
 - Muokattu koodi pylint-ohjeen mukaiseksi
+
+## Viikko 5
+- Lisätty riittävästi kuvia tasoon 1
+- Korjattu testien toiminta ja hakemistojen rakenne
+- Lisätty hiiren napsautuksella kortin kääntäminen
+- Laattojen järjestys arpoutuu joka kerta erikseen
