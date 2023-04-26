@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-Sovellus on muistipeli, jossa pelaaja voi valita itse vaikeustason kolmesta vaihtoehdosta.
+Sovellus on muistipeli, jossa pelaaja voi valita itse vaikeustason kolmesta vaihtoehdosta. Laattoja käännellään hiiren klikkauksella. Pelaaja näkee oman parhaan tuloksensa joka tason kohdalla erikseen.
 
 [Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
 
