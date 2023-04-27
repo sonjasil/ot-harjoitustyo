@@ -10,4 +10,4 @@ Toiminnallisuudet:
 - Löydetyt parit katoavat ruudulta
 - Jos laatat eivät ole pari, ne kääntyvät hetken päästä takaisin itsestään
 - Pelaajan paras tulos tallennetaan
-- Laatat ovat kuvitettuja (tehty osittain)
+- Laatat ovat kuvitettuja (tehty)

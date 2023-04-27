@@ -9,4 +9,5 @@
 | 18.4. |  4   | Alustavan käyttöliittymän luonti ja sen yhdistäminen ruudukon luontiin |
 | 23.4. |  3   | Osan kuvista lisäys spriteiksi |
 | 25.4. |  3   | Korttien kääntäminen hiirellä napsauttamalla ja import-ongelmien korjaus |
-| Yht.  |  17   | |
+| 27.4. |  1   | Viimeisten kuvien lisääminen tasoihin |
+| Yht.  |  18   | |
