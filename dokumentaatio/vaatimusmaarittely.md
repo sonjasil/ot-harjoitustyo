@@ -7,7 +7,7 @@ Toiminnallisuudet:
 - Laattojen paikat tasolla arvotaan joka kerta uudelleen (tehty)
 - Laatat kääntyvät hiiren napautuksella (tehty)
 - Laskuri, joka laskee käännettyjen laattaparien määrän
-- Löydetyt parit katoavat ruudulta
-- Jos laatat eivät ole pari, ne kääntyvät hetken päästä takaisin itsestään
+- Löydetyt parit katoavat ruudulta (tehty)
+- Jos laatat eivät ole pari, ne kääntyvät hetken päästä takaisin itsestään (tehty)
 - Pelaajan paras tulos tallennetaan
 - Laatat ovat kuvitettuja (tehty)

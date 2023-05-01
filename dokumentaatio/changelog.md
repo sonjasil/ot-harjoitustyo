@@ -14,3 +14,6 @@
 - Korjattu testien toiminta ja hakemistojen rakenne
 - Lisätty hiiren napsautuksella kortin kääntäminen
 - Laattojen järjestys arpoutuu joka kerta erikseen
+
+## Viikko 6
+- Lisätty riittävästi kuvia kaikkiin tasoihin
