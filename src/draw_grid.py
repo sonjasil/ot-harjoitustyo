@@ -94,6 +94,10 @@ def main(level):
                     last = now
                     screen.blit(middle_card1.image, middle_card1.rect)
                     screen.blit(middle_card2.image, middle_card2.rect)
+                    sprite1.kill()
+                    sprite2.kill()
+                    back1.kill()
+                    back2.kill()
                     clicks = 0
             if event.type == pygame.QUIT:
                 running = False
