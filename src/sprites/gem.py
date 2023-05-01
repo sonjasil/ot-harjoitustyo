@@ -6,6 +6,7 @@ dirname = os.path.dirname(__file__)
 class Gem(pygame.sprite.Sprite):
     def __init__(self, gem_x=0, gem_y=0):
         super().__init__()
+        self.id = 4
 
         self.image = pygame.image.load(os.path.join(dirname, "..", "graphics", "gem.png"))
 

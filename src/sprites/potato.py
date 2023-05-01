@@ -6,6 +6,7 @@ dirname = os.path.dirname(__file__)
 class Potato(pygame.sprite.Sprite):
     def __init__(self, p_x=0, p_y=0):
         super().__init__()
+        self.id = 7
 
         self.image = pygame.image.load(os.path.join(dirname, "..", "graphics", "potato.png"))
 

@@ -6,6 +6,7 @@ dirname = os.path.dirname(__file__)
 class Moon(pygame.sprite.Sprite):
     def __init__(self, moon_x=0, moon_y=0):
         super().__init__()
+        self.id = 6
 
         self.image = pygame.image.load(os.path.join(dirname, "..", "graphics", "moon.png"))
 
