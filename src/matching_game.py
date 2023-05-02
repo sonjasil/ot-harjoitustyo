@@ -14,30 +14,24 @@ class Game:
     def __init__(self, grid_map, cell_size):
         self.grid_map = grid_map
         self.cell_size = cell_size
-        self.size = len(grid_map)
         self.apples = pygame.sprite.Group()
         self.balloons = pygame.sprite.Group()
         self.hearts = pygame.sprite.Group()
         self.moons = pygame.sprite.Group()
         self.stars = pygame.sprite.Group()
-        self.tulips = pygame.sprite.Group()
-        self.carrots = pygame.sprite.Group()
-        self.gems = pygame.sprite.Group()
-        self.potatoes = pygame.sprite.Group()
-        self.suns = pygame.sprite.Group()
         self.all_sprites = pygame.sprite.Group()
 
-        self._initialize_sprites(grid_map)
+        self._initialize_images(grid_map)
 
-    def _initialize_sprites(self, grid_map):
-        height = len(grid_map)
-        width = len(grid_map[0])
+    def _initialize_images(self, grid_map):
+        map_height = len(grid_map)
+        map_width = len(grid_map[0])
 
-        for grid_y in range(height):
-            for grid_x in range(width):
-                cell = self.grid_map[grid_y][grid_x]
-                normalized_x = grid_x * self.cell_size
-                normalized_y = grid_y * self.cell_size
+        for map_y in range(map_height):
+            for map_x in range(map_width):
+                cell = self.grid_map[map_y][map_x]
+                normalized_x = map_x * self.cell_size
+                normalized_y = map_y * self.cell_size
 
                 if cell[1] == 1:
                     self.apples.add(Apple(normalized_x, normalized_y))
@@ -49,7 +43,39 @@ class Game:
                     self.moons.add(Moon(normalized_x, normalized_y))
                 elif cell[1] == 5:
                     self.stars.add(Star(normalized_x, normalized_y))
-                elif cell[1] == 6:
+
+        self.all_sprites.add(self.apples,
+                             self.balloons,
+                             self.hearts,
+                             self.moons,
+                             self.stars)
+
+class Game2:
+    def __init__(self, grid_map, cell_size):
+        self.grid_map = grid_map
+        self.cell_size = cell_size
+        self.tulips = pygame.sprite.Group()
+        self.carrots = pygame.sprite.Group()
+        self.gems = pygame.sprite.Group()
+        self.potatoes = pygame.sprite.Group()
+        self.suns = pygame.sprite.Group()
+        self.all_sprites = pygame.sprite.Group()
+
+        self._initialize_images(grid_map)
+
+    def _initialize_images(self, grid_map):
+        map_height = len(grid_map)
+        map_width = len(grid_map[0])
+        game1 = Game(self.grid_map, self.cell_size)
+        sprites1 = game1.all_sprites
+
+        for map_y in range(map_height):
+            for map_x in range(map_width):
+                cell = self.grid_map[map_y][map_x]
+                normalized_x = map_x * self.cell_size
+                normalized_y = map_y * self.cell_size
+
+                if cell[1] == 6:
                     self.tulips.add(Tulip(normalized_x, normalized_y))
                 elif cell[1] == 7:
                     self.carrots.add(Carrot(normalized_x, normalized_y))
@@ -60,15 +86,10 @@ class Game:
                 elif cell[1] == 10:
                     self.suns.add(Sun(normalized_x, normalized_y))
 
-
-            self.all_sprites.add(self.apples,
-                                 self.balloons,
-                                 self.hearts,
-                                 self.moons,
-                                 self.stars,
-                                 self.tulips,
-                                 self.carrots,
-                                 self.gems,
-                                 self.potatoes,
-                                 self.suns)
-
+        self.all_sprites.add(sprites1,
+                             self.tulips,
+                             self.carrots,
+                             self.gems,
+                             self.potatoes,
+                             self.suns)
+      

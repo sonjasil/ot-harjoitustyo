@@ -1,7 +1,7 @@
 from random import shuffle
 import pygame
 from grid import Grid, Layer
-from matching_game import Game
+from matching_game import Game2
 
 def create_map(level):
     if level == 1:
@@ -40,7 +40,7 @@ def main(level):
 
     grid = Grid(grid_map, CELL_SIZE)
     middle = Layer(grid_map, CELL_SIZE)
-    game = Game(grid_map, CELL_SIZE)
+    game = Game2(grid_map, CELL_SIZE)
 
     pygame.init()
 
@@ -81,7 +81,7 @@ def main(level):
                                         middle_card2 = mid
                                         clicks += 1
                                         back2 = back
-            if clicks == 2:    
+            if clicks == 2:
                 now = pygame.time.get_ticks()
                 if sprite1.id != sprite2.id and now - last >= cooldown:
                     last = now
