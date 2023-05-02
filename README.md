@@ -10,7 +10,7 @@ Sovellus on muistipeli, jossa pelaaja voi valita itse vaikeustason kolmesta vaih
 
 [Rakenne](dokumentaatio/arkkitehtuuri.md)
 
-[Release](https://github.com/sonjasil/ot-harjoitustyo/releases/tag/viikko5)
+[Releaset](https://github.com/sonjasil/ot-harjoitustyo/releases)
 
 ## Käyttöohje
 
