@@ -17,3 +17,6 @@
 
 ## Viikko 6
 - Lisätty riittävästi kuvia kaikkiin tasoihin
+- Lisätty korttien kääntäminen ja parien poistuminen ruudulta
+- Lisätty pistelaskuri
+- Muutettu ohjelman ajamisen rakenne luokaksi

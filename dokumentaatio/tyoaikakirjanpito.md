@@ -10,4 +10,6 @@
 | 23.4. |  3   | Osan kuvista lisäys spriteiksi |
 | 25.4. |  3   | Korttien kääntäminen hiirellä napsauttamalla ja import-ongelmien korjaus |
 | 27.4. |  1   | Viimeisten kuvien lisääminen tasoihin |
-| Yht.  |  18   | |
+| 29.4. |  4   | Korttien kääntymisen lisäys ja parien muodostus |
+| 2.5.  |  4   | Pistelaskurin lisäys ja rakenteen muuttaminen luokaksi |
+| Yht.  |  26   | |
