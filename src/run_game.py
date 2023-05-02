@@ -4,7 +4,19 @@ from grid import Grid, Layer
 from matching_game import Game2
 
 class MatchingGame:
+    """ Luokka, joka luo muistipelin tason mukaan.
+    
+    Attributes: 
+        level: Pelin taso, määrittää ruudukon koon.
+    """
+
     def __init__(self, level):
+        """Konstruktori, luo pelin ruudukon ja spritet kerroksittain.
+        
+        Args:
+            level: Pelin taso, määrittää ruudukon koon
+        """
+        
         self.level = level
         self.grid_map = self.create_map(self.level)
         self.CELL_SIZE = 200
@@ -13,6 +25,15 @@ class MatchingGame:
         self.game = Game2(self.grid_map, self.CELL_SIZE)
 
     def create_map(self, level):
+        """Luo pelin ruudukon tason perusteella
+        
+        Args:
+            level: Pelin taso.
+
+        Returns:
+            map_grid: Pelin taso taulukkona, jossa tuplejen numerot vastaavat spriteja.
+        """
+
         if level == 1:
             map_grid = [[(0, 1), (0, 2), (0, 3), (0, 4)],
                          [(0, 5), (0, 6), (0, 2), (0, 3)],
@@ -30,6 +51,9 @@ class MatchingGame:
         return map_grid
     
     def initialize_map(self):
+        """Alustaa ruudukon ja näytön koon ruudukon mukaan.
+        """
+
         shuffle(self.grid_map)
         for row in self.grid_map:
             shuffle(row)
@@ -42,6 +66,9 @@ class MatchingGame:
         pygame.display.set_caption("Muistipeli")
 
     def run_game(self):
+        """Suorittaa peliä, päivittää näyttöä ja seuraa tapahtumia näytöllä
+        """
+
         pygame.init()
         self.initialize_map()
         self.set_elements()
@@ -65,11 +92,17 @@ class MatchingGame:
         pygame.quit()
 
     def draw_sprites(self):
+        """Piirtää spritet näytölle kerroksittain.
+        """
+
         self.game.all_sprites.draw(self.screen)
         self.middle.all_sprites.draw(self.screen)
         self.grid.all_sprites.draw(self.screen)
 
     def set_elements(self):
+        """Määrittää ohjelman suorituksen muuttujat.
+        """
+
         self.running = True
         self.clicks = 0
         self.score = 0
@@ -78,10 +111,16 @@ class MatchingGame:
         self.box = pygame.Rect(0, self.screen_height - 80, self.screen_width, 80)
 
     def render_text(self):
+        """Piirtää tekstin ja pistelaskurin näytölle.
+        """
+
         text = self.text_font.render(f"Käännetyt parit: {self.score}", True, (255, 255, 255))
         self.screen.blit(text, (self.screen_width // 2 + 40, self.screen_height - 50))
 
     def click_1(self):
+        """Piirtää ensimmäisen käännetyn kortin.
+        """
+
         for sprite in self.game.all_sprites:
             for mid in self.middle.all_sprites:
                 for back in self.grid.all_sprites:
@@ -95,6 +134,9 @@ class MatchingGame:
                             self.clicks += 1
 
     def click_2(self):
+        """Piirtää toisen käännetyn kortin ruudulle. Lisää pistelaskurin summaa.
+        """
+
         self.score += 1
         pygame.draw.rect(self.screen, (0, 0, 0), self.box)
         for sprite in self.game.all_sprites:
@@ -109,6 +151,9 @@ class MatchingGame:
                             self.clicks += 1
                             self.back2 = back
     def turn_cards(self):
+        """Kääntää käännetyt kortit takaisin ympäri, jos ne eivät ole pari tai poistaa kortit, jos ne ovat pari. Poistaa poistettujen korttien paikat käytöstä.
+        """
+
         now = pygame.time.get_ticks()
         if self.sprite1.id != self.sprite2.id and now - self.last >= self.cooldown:
             self.last = now
