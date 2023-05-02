@@ -1,5 +1,5 @@
 from tkinter import Tk, ttk, Button
-from draw_grid import main
+from run_game import MatchingGame
 
 class Interface:
     def __init__(self, root):
@@ -9,7 +9,7 @@ class Interface:
         label = ttk.Label(master=self._root, text="Muistipeli", font=("Arial", 25))
         command1 = self._start_level1
         command2 = self._start_level2
-        command3 = self._start_level_3
+        command3 = self._start_level3
         level1 = Button(master=self._root, text="Taso 1", height=5, width=10, command=command1)
         level2 = Button(master=self._root, text="Taso 2", height=5, width=10, command=command2)
         level3 = Button(master=self._root, text="Taso 3", height=5, width=10, command=command3)
@@ -23,13 +23,16 @@ class Interface:
         level3.grid(row=3, column=0)
 
     def _start_level1(self):
-        main(1)
+        game = MatchingGame(1)
+        game.run_game()
 
     def _start_level2(self):
-        main(2)
+        game = MatchingGame(2)
+        game.run_game()
 
-    def _start_level_3(self):
-        main(3)
+    def _start_level3(self):
+        game = MatchingGame(3)
+        game.run_game()
 
 
 
