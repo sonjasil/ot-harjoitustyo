@@ -43,3 +43,5 @@ Pylint-tarkistukset voi suorittaa komennolla:
 ```bash
 poetry run invoke lint
 ```
+
+Peli käynnistyy valikkoon, josta valitaan vaikeustaso. Vaikeustaso vaikuttaa muistipelin korttien määrään. Alin taso on 1. Kortteja käännetään hiirellä klikkaamalla. Kortit kääntyvät itsestään ympäri hetken päästä, jos hiireä liikauttaa toisen kortin klikkaamisen jälkeen. Tason alalaidassa näkyy käännettyjen korttiparien määrä. Tavoitteena on saada mahdollisimman pieni tulos.
