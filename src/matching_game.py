@@ -11,7 +11,21 @@ from sprites.potato import Potato
 from sprites.sun import Sun
 
 class Game:
+    """ Luokka, joka luo osan muistipelin korttien kuvien spriteistä.
+     
+      Attributes:
+       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       cell_size: määrittää yksittäisen spriten koon.
+    """
+
     def __init__(self, grid_map, cell_size):
+        """ Konstruktori, luo eri spriteille omat ja kaikille spriteille yhteisen sprite-ryhmän.
+        
+        Args:
+        grid_map: määrittää tason kartan ja spritejen paikan.
+        cell_size: määrittää spritejen koon.
+        """
+
         self.grid_map = grid_map
         self.cell_size = cell_size
         self.apples = pygame.sprite.Group()
@@ -24,6 +38,11 @@ class Game:
         self._initialize_images(grid_map)
 
     def _initialize_images(self, grid_map):
+        """ Luo kuvaspritet tiettyihin kohtiin tasoa tasokartan perusteella ja lisää spritet ryhmiin.
+
+        Args:
+        grid_map: määrittää spritejen paikat tasolla.
+        """
         map_height = len(grid_map)
         map_width = len(grid_map[0])
 
@@ -51,7 +70,21 @@ class Game:
                              self.stars)
 
 class Game2:
+    """ Luokka, joka luo loput muistipelin spriteistä.
+
+    Attributes:
+       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       cell_size: määrittää yksittäisen spriten koon.
+    """
+
     def __init__(self, grid_map, cell_size):
+        """ Konstruktori, luo eri spriteille omat ja kaikille spriteille yhteisen sprite-ryhmän.
+        
+        Args:
+        grid_map: määrittää tason kartan ja spritejen paikan.
+        cell_size: määrittää spritejen koon.
+        """
+
         self.grid_map = grid_map
         self.cell_size = cell_size
         self.tulips = pygame.sprite.Group()
@@ -64,6 +97,12 @@ class Game2:
         self._initialize_images(grid_map)
 
     def _initialize_images(self, grid_map):
+        """ Luo kuvaspritet tiettyihin kohtiin tasoa tasokartan perusteella ja lisää spritet ryhmiin.
+
+        Args:
+        grid_map: määrittää spritejen paikat tasolla.
+        """
+
         map_height = len(grid_map)
         map_width = len(grid_map[0])
         game1 = Game(self.grid_map, self.cell_size)

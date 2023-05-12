@@ -3,7 +3,22 @@ from sprites.back import Back
 from sprites.middle import Middle
 
 class Grid:
+    """ Luokka, joka luo ruudukon muistipelin korttien takaosista.
+
+    Attributes:
+       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       cell_size: määrittää yksittäisen spriten koon.
+    """
+
     def __init__(self, grid_map, cell_size):
+        """ Konstruktori, joka luo spriteille ryhmät.
+
+        Args:
+        grid_map: määrittää tason kartan ja spritejen paikan.
+        cell_size: määrittää spritejen koon.
+        
+        """
+
         self.grid_map = grid_map
         self.cell_size = cell_size
         self.size = len(grid_map)
@@ -13,6 +28,13 @@ class Grid:
         self._initialize_sprites(grid_map)
 
     def _initialize_sprites(self, grid_map):
+        """ Luo spritet tiettyihin kohtiin tason kartan mukaan. Takaspritet luodaan jokaiseen kartan kohtaan.
+        
+        Args:
+        grid_map: määrittää spritejen kohdat tasolla.
+
+        """
+
         height = len(grid_map)
         width = len(grid_map[0])
 
@@ -28,7 +50,23 @@ class Grid:
             self.all_sprites.add(self.backs)
 
 class Layer:
+    """ Luokka, spriteistä tyhjän kerroksen korttien kuvien ja takaosien väliin.
+
+    Attributes:
+       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       cell_size: määrittää yksittäisen spriten koon.
+
+    """
+
     def __init__(self, grid_map, cell_size):
+        """ Konstruktori, joka luo spriteille ryhmät.
+
+        Args:
+        grid_map: määrittää tason kartan ja spritejen paikan.
+        cell_size: määrittää spritejen koon.
+
+        """
+         
         self.grid_map = grid_map
         self.cell_size = cell_size
         self.size = len(grid_map)
@@ -38,6 +76,13 @@ class Layer:
         self._initialize_sprites(grid_map)
 
     def _initialize_sprites(self, grid_map):
+        """ Luo spritet tiettyihin kohtiin tason kartan mukaan. Välispritet luodaan tason jokaiseen kohtaan.
+        
+        Args:
+        grid_map: määrittää spritejen kohdat tasolla.
+        
+        """
+
         height = len(grid_map)
         width = len(grid_map[0])
 
