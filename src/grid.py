@@ -6,7 +6,8 @@ class Grid:
     """ Luokka, joka luo ruudukon muistipelin korttien takaosista.
 
     Attributes:
-       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       grid_map: määrittää tason kartan, jonka perusteella 
+                kuvia asetetaan tietty määrä tiettyihin kohtiin.
        cell_size: määrittää yksittäisen spriten koon.
     """
 
@@ -28,8 +29,9 @@ class Grid:
         self._initialize_sprites(grid_map)
 
     def _initialize_sprites(self, grid_map):
-        """ Luo spritet tiettyihin kohtiin tason kartan mukaan. Takaspritet luodaan jokaiseen kartan kohtaan.
-        
+        """ Luo spritet tiettyihin kohtiin tason kartan mukaan. 
+            Takaspritet luodaan jokaiseen kartan kohtaan.
+
         Args:
         grid_map: määrittää spritejen kohdat tasolla.
 
@@ -53,7 +55,8 @@ class Layer:
     """ Luokka, spriteistä tyhjän kerroksen korttien kuvien ja takaosien väliin.
 
     Attributes:
-       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       grid_map: määrittää tason kartan,
+                jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
        cell_size: määrittää yksittäisen spriten koon.
 
     """
@@ -66,7 +69,7 @@ class Layer:
         cell_size: määrittää spritejen koon.
 
         """
-         
+
         self.grid_map = grid_map
         self.cell_size = cell_size
         self.size = len(grid_map)
@@ -76,7 +79,8 @@ class Layer:
         self._initialize_sprites(grid_map)
 
     def _initialize_sprites(self, grid_map):
-        """ Luo spritet tiettyihin kohtiin tason kartan mukaan. Välispritet luodaan tason jokaiseen kohtaan.
+        """ Luo spritet tiettyihin kohtiin tason kartan mukaan. 
+            Välispritet luodaan tason jokaiseen kohtaan.
         
         Args:
         grid_map: määrittää spritejen kohdat tasolla.

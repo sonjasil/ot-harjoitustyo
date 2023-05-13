@@ -14,7 +14,8 @@ class Game:
     """ Luokka, joka luo osan muistipelin korttien kuvien spriteistä.
      
       Attributes:
-       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       grid_map: määrittää tason kartan, 
+                jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
        cell_size: määrittää yksittäisen spriten koon.
     """
 
@@ -38,7 +39,8 @@ class Game:
         self._initialize_images(grid_map)
 
     def _initialize_images(self, grid_map):
-        """ Luo kuvaspritet tiettyihin kohtiin tasoa tasokartan perusteella ja lisää spritet ryhmiin.
+        """ Luo kuvaspritet tiettyihin kohtiin tasoa tasokartan perusteella ja 
+            lisää spritet ryhmiin.
 
         Args:
         grid_map: määrittää spritejen paikat tasolla.
@@ -73,12 +75,14 @@ class Game2:
     """ Luokka, joka luo loput muistipelin spriteistä.
 
     Attributes:
-       grid_map: määrittää tason kartan, jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
+       grid_map: määrittää tason kartan, 
+                jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
        cell_size: määrittää yksittäisen spriten koon.
     """
 
     def __init__(self, grid_map, cell_size):
-        """ Konstruktori, luo eri spriteille omat ja kaikille spriteille yhteisen sprite-ryhmän.
+        """ Konstruktori, luo eri spriteille omat ja 
+            kaikille spriteille yhteisen sprite-ryhmän.
         
         Args:
         grid_map: määrittää tason kartan ja spritejen paikan.
@@ -97,7 +101,8 @@ class Game2:
         self._initialize_images(grid_map)
 
     def _initialize_images(self, grid_map):
-        """ Luo kuvaspritet tiettyihin kohtiin tasoa tasokartan perusteella ja lisää spritet ryhmiin.
+        """ Luo kuvaspritet tiettyihin kohtiin tasoa tasokartan perusteella ja 
+            lisää spritet ryhmiin.
 
         Args:
         grid_map: määrittää spritejen paikat tasolla.
