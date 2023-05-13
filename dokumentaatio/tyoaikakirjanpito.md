@@ -12,4 +12,6 @@
 | 27.4. |  1   | Viimeisten kuvien lisääminen tasoihin |
 | 29.4. |  4   | Korttien kääntymisen lisäys ja parien muodostus |
 | 2.5.  |  4   | Pistelaskurin lisäys ja rakenteen muuttaminen luokaksi |
-| Yht.  |  26   | |
+| 12.5. |  1   | Lisätty docstringiä |
+| 13.5  |  5   | Pylint-virheiden karsimista ja dokumentaation tekoa |
+| Yht.  |  32   | |
