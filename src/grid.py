@@ -2,6 +2,7 @@ import pygame
 from sprites.back import Back
 from sprites.middle import Middle
 
+
 class Grid:
     """ Luokka, joka luo ruudukon muistipelin korttien takaosista.
 
@@ -17,7 +18,7 @@ class Grid:
         Args:
         grid_map: määrittää tason kartan ja spritejen paikan.
         cell_size: määrittää spritejen koon.
-        
+
         """
 
         self.grid_map = grid_map
@@ -51,6 +52,7 @@ class Grid:
 
             self.all_sprites.add(self.backs)
 
+
 class Layer:
     """ Luokka, spriteistä tyhjän kerroksen korttien kuvien ja takaosien väliin.
 
@@ -81,10 +83,10 @@ class Layer:
     def _initialize_sprites(self, grid_map):
         """ Luo spritet tiettyihin kohtiin tason kartan mukaan. 
             Välispritet luodaan tason jokaiseen kohtaan.
-        
+
         Args:
         grid_map: määrittää spritejen kohdat tasolla.
-        
+
         """
 
         height = len(grid_map)

@@ -3,20 +3,21 @@ import pygame
 from grid import Grid, Layer
 from matching_game import Game2
 
+
 class MatchingGame:
     """ Luokka, joka luo muistipelin tason mukaan.
-    
+
     Attributes: 
         level: Pelin taso, määrittää ruudukon koon.
     """
 
     def __init__(self, level):
         """Konstruktori, luo pelin ruudukon ja spritet kerroksittain.
-        
+
         Args:
             level: Pelin taso, määrittää ruudukon koon
         """
-        
+
         self.level = level
         self.grid_map = self.create_map(self.level)
         self.CELL_SIZE = 200
@@ -26,7 +27,7 @@ class MatchingGame:
 
     def create_map(self, level):
         """Luo pelin ruudukon tason perusteella
-        
+
         Args:
             level: Pelin taso.
 
@@ -36,20 +37,20 @@ class MatchingGame:
 
         if level == 1:
             map_grid = [[(0, 1), (0, 2), (0, 3), (0, 4)],
-                         [(0, 5), (0, 6), (0, 2), (0, 3)],
-                         [(0, 5), (0, 6), (0, 1), (0, 4)]]
+                        [(0, 5), (0, 6), (0, 2), (0, 3)],
+                        [(0, 5), (0, 6), (0, 1), (0, 4)]]
         elif level == 2:
             map_grid = [[(0, 8), (0, 6), (0, 4), (0, 2)],
-                         [(0, 7), (0, 7), (0, 5), (0, 1)],
-                         [(0, 3), (0, 3), (0, 1), (0, 6)],
-                         [(0, 8), (0, 4), (0, 5), (0, 2)]]
+                        [(0, 7), (0, 7), (0, 5), (0, 1)],
+                        [(0, 3), (0, 3), (0, 1), (0, 6)],
+                        [(0, 8), (0, 4), (0, 5), (0, 2)]]
         elif level == 3:
             map_grid = [[(0, 1), (0, 10), (0, 2), (0, 9), (0, 5)],
-                         [(0, 1), (0, 8), (0, 7), (0, 6), (0, 5)],
-                         [(0, 6), (0, 4), (0, 7), (0, 3), (0, 3)],
-                         [(0, 10), (0, 2), (0, 8), (0, 9), (0, 4)]]
+                        [(0, 1), (0, 8), (0, 7), (0, 6), (0, 5)],
+                        [(0, 6), (0, 4), (0, 7), (0, 3), (0, 3)],
+                        [(0, 10), (0, 2), (0, 8), (0, 9), (0, 4)]]
         return map_grid
-    
+
     def initialize_map(self):
         """Alustaa ruudukon ja näytön koon ruudukon mukaan.
         """
@@ -62,7 +63,8 @@ class MatchingGame:
         self.screen_height = height * self.CELL_SIZE + 80
         self.screen_width = width * self.CELL_SIZE
 
-        self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
+        self.screen = pygame.display.set_mode(
+            (self.screen_width, self.screen_height))
         pygame.display.set_caption("Muistipeli")
 
     def run_game(self):
@@ -81,13 +83,13 @@ class MatchingGame:
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     self.mouse_x, self.mouse_y = event.pos
                     if self.clicks == 0:
-                         self.click_1()
+                        self.click_1()
                     elif self.clicks == 1:
-                         self.click_2()
+                        self.click_2()
                 if self.clicks == 2:
                     self.turn_cards()
                 if event.type == pygame.QUIT:
-                    self.running = False         
+                    self.running = False
             pygame.display.flip()
         pygame.quit()
 
@@ -108,14 +110,17 @@ class MatchingGame:
         self.score = 0
         self.cooldown = 3000
         self.text_font = pygame.font.SysFont("Arial", 24)
-        self.box = pygame.Rect(0, self.screen_height - 80, self.screen_width, 80)
+        self.box = pygame.Rect(0, self.screen_height -
+                               80, self.screen_width, 80)
 
     def render_text(self):
         """Piirtää tekstin ja pistelaskurin näytölle.
         """
 
-        text = self.text_font.render(f"Käännetyt parit: {self.score}", True, (255, 255, 255))
-        self.screen.blit(text, (self.screen_width // 2 + 40, self.screen_height - 50))
+        text = self.text_font.render(
+            f"Käännetyt parit: {self.score}", True, (255, 255, 255))
+        self.screen.blit(text, (self.screen_width // 2 +
+                         40, self.screen_height - 50))
 
     def click_1(self):
         """Piirtää ensimmäisen käännetyn kortin.
@@ -150,8 +155,10 @@ class MatchingGame:
                             self.middle_card2 = mid
                             self.clicks += 1
                             self.back2 = back
+
     def turn_cards(self):
-        """Kääntää käännetyt kortit takaisin ympäri, jos ne eivät ole pari tai poistaa kortit, jos ne ovat pari. Poistaa poistettujen korttien paikat käytöstä.
+        """Kääntää käännetyt kortit takaisin ympäri, jos ne eivät ole pari tai poistaa kortit, jos ne ovat pari. 
+            Poistaa poistettujen korttien paikat käytöstä.
         """
 
         now = pygame.time.get_ticks()

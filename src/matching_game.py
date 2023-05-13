@@ -10,9 +10,10 @@ from sprites.gem import Gem
 from sprites.potato import Potato
 from sprites.sun import Sun
 
+
 class Game:
     """ Luokka, joka luo osan muistipelin korttien kuvien spriteistä.
-     
+
       Attributes:
        grid_map: määrittää tason kartan, 
                 jonka perusteella kuvia asetetaan tietty määrä tiettyihin kohtiin.
@@ -21,7 +22,7 @@ class Game:
 
     def __init__(self, grid_map, cell_size):
         """ Konstruktori, luo eri spriteille omat ja kaikille spriteille yhteisen sprite-ryhmän.
-        
+
         Args:
         grid_map: määrittää tason kartan ja spritejen paikan.
         cell_size: määrittää spritejen koon.
@@ -71,6 +72,7 @@ class Game:
                              self.moons,
                              self.stars)
 
+
 class Game2:
     """ Luokka, joka luo loput muistipelin spriteistä.
 
@@ -83,7 +85,7 @@ class Game2:
     def __init__(self, grid_map, cell_size):
         """ Konstruktori, luo eri spriteille omat ja 
             kaikille spriteille yhteisen sprite-ryhmän.
-        
+
         Args:
         grid_map: määrittää tason kartan ja spritejen paikan.
         cell_size: määrittää spritejen koon.
@@ -136,4 +138,3 @@ class Game2:
                              self.gems,
                              self.potatoes,
                              self.suns)
-      

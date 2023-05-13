@@ -1,6 +1,7 @@
 import unittest
 from grid import Grid
-from run_game import MatchingGame 
+from run_game import MatchingGame
+
 
 class TestGrid(unittest.TestCase):
     def setUp(self):
