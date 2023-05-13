@@ -5,9 +5,9 @@ from run_game import MatchingGame
 
 class TestGrid(unittest.TestCase):
     def setUp(self):
-        map1 = MatchingGame(1).create_map(1)
-        map2 = MatchingGame(2).create_map(2)
-        map3 = MatchingGame(3).create_map(3)
+        map1 = MatchingGame(1).grid_map
+        map2 = MatchingGame(2).grid_map
+        map3 = MatchingGame(3).grid_map
         self.grid1 = Grid(map1, 200)
         self.grid2 = Grid(map2, 200)
         self.grid3 = Grid(map3, 200)
