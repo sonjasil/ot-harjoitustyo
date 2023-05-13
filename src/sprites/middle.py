@@ -7,6 +7,7 @@ dirname = os.path.dirname(__file__)
 class Middle(pygame.sprite.Sprite):
     def __init__(self, mid_x=0, mid_y=0):
         super().__init__()
+        self.id = 0
 
         self.image = pygame.image.load(os.path.join(
             dirname, "..", "graphics", "middle.png"))

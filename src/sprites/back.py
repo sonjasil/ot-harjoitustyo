@@ -7,6 +7,7 @@ dirname = os.path.dirname(__file__)
 class Back(pygame.sprite.Sprite):
     def __init__(self, back_x=0, back_y=0):
         super().__init__()
+        self.id = -1
 
         self.image = pygame.image.load(os.path.join(
             dirname, "..", "graphics", "back.png"))
