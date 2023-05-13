@@ -8,11 +8,15 @@ Sovellus on muistipeli, jossa pelaaja voi valita itse vaikeustason kolmesta vaih
 
 [Changelog](dokumentaatio/changelog.md)
 
-[Rakenne](dokumentaatio/arkkitehtuuri.md)
+[Käyttöohje](dokumentaatio/kaytto.md)
+
+[Testausdokumentti](dokumentaatio/testaus.md)
+
+[Sovellusarkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
 
 [Releaset](https://github.com/sonjasil/ot-harjoitustyo/releases)
 
-## Käyttöohje
+## Käynnistysohje
 
 Asenna ensin sovelluksen riippuvuudet komennolla:
 
@@ -25,6 +29,8 @@ Sovellus käynnistyy komennolla:
 ```bash
 poetry run invoke start
 ```
+
+## Muut komentorivikomennot
 
 Testien suoritus tapahtuu komennolla:
 
@@ -43,5 +49,3 @@ Pylint-tarkistukset voi suorittaa komennolla:
 ```bash
 poetry run invoke lint
 ```
-
-Peli käynnistyy valikkoon, josta valitaan vaikeustaso. Vaikeustaso vaikuttaa muistipelin korttien määrään. Alin taso on 1. Kortteja käännetään hiirellä klikkaamalla. Kortit kääntyvät itsestään ympäri hetken päästä, jos hiireä liikauttaa toisen kortin klikkaamisen jälkeen. Tason alalaidassa näkyy käännettyjen korttiparien määrä. Tavoitteena on saada mahdollisimman pieni tulos.
