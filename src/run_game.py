@@ -19,6 +19,7 @@ class MatchingGame:
         super().__init__()
         self.lvl = level
         self.level = LevelMap(self.lvl)
+        self.level.initialize_map()
         self.grid_map = self.level.grid_map
         self.grid = Grid(self.grid_map, self.level.cell_size)
         self.middle = Layer(self.grid_map, self.level.cell_size)

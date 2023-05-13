@@ -15,7 +15,6 @@ class LevelMap:
         self.screen_width = None
 
         self.create_map(self.level)
-        self.initialize_map()
 
     def create_map(self, level):
         """Luo pelin ruudukon tason perusteella
