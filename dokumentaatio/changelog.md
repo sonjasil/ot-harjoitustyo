@@ -20,3 +20,7 @@
 - Lisätty korttien kääntäminen ja parien poistuminen ruudulta
 - Lisätty pistelaskuri
 - Muutettu ohjelman ajamisen rakenne luokaksi
+
+## Viikko 7
+- Sovelluksen viimeistelyä ja koodin rakenteen muokkausta
+- Käyttöohjeen teko
