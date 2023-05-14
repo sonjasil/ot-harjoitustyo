@@ -91,6 +91,11 @@ class MatchingGame:
 
     def get_scores(self):
         """Hakee pelaajan kaikki tulokset tiedostosta.
+
+        Returns:
+        list(scores): Lista pelaajan kaikista saamista pisteistä.
+        tai
+        list(): Tyhjä lista, jos tiedostoa ei ole vielä olemassa.
         """
 
         try:
@@ -107,7 +112,12 @@ class MatchingGame:
             return list()
 
     def get_highscore(self):
-        """Hakee pelaajan parhaan tuloksen listasta, jos pelaajalla on tuloksia
+        """Hakee pelaajan parhaan tuloksen listasta, jos pelaajalla on tuloksia.
+
+        Returns:
+        min(self.scores): Pienin arvo pelaajan kaikista hyväksytyistä pisteistä.
+        tai
+        "-": Pelkkä merkki, jos pelaajalla ei ole vielä tallennettuja pisteitä.
         """
 
         try:
@@ -116,6 +126,8 @@ class MatchingGame:
             return "-"
 
     def load_scores(self):
+        """Lataa pelaajan tulokset tason perusteella eri tiedostoihin, jos pisteet ovat vähintään korttiparien määrä.
+        """
         if self.lvl == 1 and self.score >= 6:
             self.scores.append(self.score)
         elif self.lvl == 2 and self.score >= 8:
