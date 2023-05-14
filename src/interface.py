@@ -1,5 +1,5 @@
 from tkinter import Tk, ttk, Button
-from src.run_game import MatchingGame
+from run_game import MatchingGame
 
 
 class Interface:
