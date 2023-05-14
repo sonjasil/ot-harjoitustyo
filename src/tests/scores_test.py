@@ -2,7 +2,7 @@ import unittest
 from run_game import MatchingGame
 
 
-class TestHighscore(unittest.TestCase):
+class TestScores(unittest.TestCase):
     def setUp(self):
         self.game = MatchingGame(1)
 
