@@ -9,5 +9,5 @@ Toiminnallisuudet:
 - Laskuri, joka laskee käännettyjen laattaparien määrän (tehty)
 - Löydetyt parit katoavat ruudulta (tehty)
 - Jos laatat eivät ole pari, ne kääntyvät hetken päästä takaisin itsestään (tehty)
-- Pelaajan paras tulos tallennetaan (tehty, kaikki tulokset tallennetaan)
+- Pelaajan paras tulos tallennetaan (tehty, kaikki tulokset tallennetaan ja paras näytetään tason yhteydessä)
 - Laatat ovat kuvitettuja (tehty)
