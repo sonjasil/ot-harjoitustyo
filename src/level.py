@@ -1,8 +1,9 @@
 from random import shuffle
 
+
 class LevelMap:
     """ Luokka, joka luo tason kartan.
-    
+
     Attributes:
         level: tason numero, määrittää minkä pohjan mukaan kartta luodaan.
     """
