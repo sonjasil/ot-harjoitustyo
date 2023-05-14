@@ -22,5 +22,6 @@
 - Muutettu ohjelman ajamisen rakenne luokaksi
 
 ## Viikko 7
+- Lisätty pelaajan tulosten tallennus tiedostoon
 - Sovelluksen viimeistelyä ja koodin rakenteen muokkausta
 - Käyttöohjeen teko
