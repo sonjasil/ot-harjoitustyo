@@ -2,3 +2,6 @@
 __pycache__
 .coverage
 htmlcov
+scores.p
+scores2.p
+scores3.p
